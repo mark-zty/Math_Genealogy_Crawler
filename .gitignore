@@ -1,0 +1,15 @@
+# Credentials — do not commit
+credentials.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Data / scratch output
+*.csv
+
