@@ -40,10 +40,19 @@ write_to_csv(start=0, stop=300000, file_path='acad.csv')
 
 The API helper functions (`login`, `doquery`) live in `mgp.py`.
 
+## Data
+
+A pre-crawled dataset is included: **`acad300k_schools.csv`** (~24 MB, ~300k rows,
+tab-delimited). It was produced by the crawler over MGP IDs 0–300000, so you can
+work with the data directly without re-running the crawl. Columns:
+
+`ID`, `Family Name`, `Given Name`, `Other Names`, `Advised By`, `Degree Year`, `Schools`
+
 ## Files
 
 | File | Purpose |
 | --- | --- |
 | `mgp_crawler.ipynb` | Main notebook — run this to crawl. |
 | `mgp.py` | MGP API helpers (`login`, `doquery`). |
+| `acad300k_schools.csv` | Pre-crawled dataset (~300k records, tab-delimited). |
 | `credentials.json` | Your MGP login (git-ignored — create it yourself). |
